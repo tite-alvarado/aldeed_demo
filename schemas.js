@@ -95,6 +95,15 @@ Schemas.Person = new SimpleSchema({
       }
     }
   },      
+  registeredMailist: {
+    type: Boolean,
+    label: "I would like to receive promotional information",
+    autoform: {
+      afFieldInput: {
+        type: "boolean-checkbox",
+      }
+    }
+  },
   comment: {
     type: String,
     label: "Tell us about yourself",
