@@ -1,0 +1,21 @@
+<template name="peopleTable">
+  <h3><strong>Registered People</strong></h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr> 
+    </thead>
+    <tbody>
+      {{#each people}}
+        <tr>
+          <td><a href="{{pathFor route='edit'}}">{{ firstName }}</a></td>
+          <td><a href="{{pathFor route='edit'}}">{{ lastName }}</a></td>
+          <td><a href="{{pathFor route='edit'}}">{{ email }}</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

@@ -1,0 +1,13 @@
+<template name="updateForm">
+  <div class="container">
+    {{> peopleTable }}
+    <br>
+    <!-- instance from router -->
+    <h3><strong> Update information </strong></h3>
+      <h3> {{ firstName }} {{ lastName }} </h3>
+    <br><br>
+    {{> quickForm id="Person" schema=Schemas.Person collection="Data" type="update" omitFields="firstName,lastName" doc=(person this._id) }}
+    <a href="{{pathFor route='home'}}" class="btn btn-warning">Back</a>
+    <a id="remove" class="btn btn-danger">Remove</a>
+  </div>
+</template>
