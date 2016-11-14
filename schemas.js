@@ -77,6 +77,7 @@ Schemas.Person = new SimpleSchema({
         type: "select-checkbox",
         options: function() {
           return [
+            {label: "Aeroplane", value: "Aeroplane"},
             {label: "Automobile", value: "Automobile"},
             {label: "Motorcycle", value: "Motorcycle"},
             {label: "Bicycle", value: "Bicycle"},
