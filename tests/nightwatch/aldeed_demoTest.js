@@ -1,7 +1,7 @@
 module.exports = {
   'Aldeed Demo - Create/Delete User' : function (client) {
     client
-      .url('http://192.168.122.16:3000')
+      .url('http://')
       .waitForElementVisible('body', 1000)
       .assert.containsText('.container', 'Registered People')
       .setValue('input[name=firstName]', 'Happy QA')
@@ -13,6 +13,12 @@ module.exports = {
       .setValue('input[name=email]', 'test@dev.test')
       .click('.btn-primary')
       .pause(1000)
+      .assert.containsText('.table', 'Happy QA')
+  },
+
+  'Aldeed Demo - Delete User' : function (client) {
+    client
+      .url('http://')
       .assert.containsText('.table', 'Happy QA')
       .pause(1000)
       .click('.table tbody tr td a')
