@@ -1,5 +1,5 @@
 module.exports = {
-  'Aldeed Demo - Create/Delete User' : function (client) {
+  'Aldeed Demo - Create User' : function (client) {
     client
       .url('http://')
       .waitForElementVisible('body', 1000)
