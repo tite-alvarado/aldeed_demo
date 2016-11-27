@@ -19,6 +19,7 @@ module.exports = {
   'Aldeed Demo - Delete User' : function (client) {
     client
       .url('http://')
+      .waitForElementVisible('.table tbody tr td a', 10000)
       .assert.containsText('.table', 'Happy QA')
       .pause(1000)
       .click('.table tbody tr td a')
