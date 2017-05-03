@@ -107,7 +107,7 @@ Schemas.Person = new SimpleSchema({
   },
   comment: {
     type: String,
-    label: "Tell us about yourself",
+    label: "Tell us about yourself (optional)",
     optional: true,
     autoform: {
       afFieldInput: {
